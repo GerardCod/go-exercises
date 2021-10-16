@@ -4,3 +4,9 @@ package sorting
 type Sorting interface {
 	Sort(data []int) []int
 }
+
+func swap(data []int, left, right int) {
+	aux := data[right]
+	data[right] = data[left]
+	data[left] = aux
+}
